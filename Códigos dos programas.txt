@@ -1,0 +1,105 @@
+Atividade 1:
+
+package atividade4;
+
+import java.util.Scanner;
+
+public class ativdade4 {
+
+	public static void main(String[] args) {
+		Scanner grava = new Scanner(System.in);
+		int menor=10, meio = 10,  numb = 0;
+		int ultimo = 10;
+		
+		for (int num=1 ; num <=3 ; num++) {
+			numb = grava.nextInt();
+			if (numb<menor) {
+				menor = num;
+			}else if(numb<meio) {
+				meio = num;
+			} else {
+				ultimo = num;
+			}
+		}
+
+	}
+
+}
+
+atividade 2:
+
+package atividade2;
+
+public class atividade2 {
+
+	public static void main(String[] args) {
+		
+		int soma=0;
+		
+		for (int num = 1 ; num <=1000; num++ ) {
+			
+		soma+=num;
+			
+		}
+		System.out.println("A soma dos números de 1 a 1000 é: " + soma);
+
+	}
+
+}
+
+atividade 3:
+
+package atividade3;
+
+public class atividade3 {
+
+	public static void main(String[] args) {
+
+		for (int num = 1 ; num<=100; num++) {
+			if(num%3==0) {
+				System.out.println(num);
+			}
+		}
+
+	}
+
+}
+
+atividade 4:
+
+package atividade4;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class atividade4 {
+
+	public static void main(String[] args) {
+		Scanner grava = new Scanner(System.in);
+		int a=0, b=0, c=0, temp ;
+		
+		
+			System.out.println("Digite o número A:");
+			a = grava.nextInt();
+			System.out.println("Digite o número B:");
+			b = grava.nextInt();
+			System.out.println("Digite o número C:");
+			c = grava.nextInt();
+			
+			for(int i =1 ; i<=10; i++) {
+			if(a>b) {
+				temp = a;
+				a = b;
+				b = temp;
+				} else if(b>c) {
+					temp = c;
+					b=c;
+					c = temp;
+				}
+			}
+			
+			System.out.println(a+ " "+ b+ " "+c);
+		
+		
+	}
+}
